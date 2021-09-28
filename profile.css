@@ -64,14 +64,17 @@ h1{
     font-style: italic;
     color: var(--main-red);
 }
+.container{
+    background-color: var(--main-blue);
+}
 .projects{
     text-align: center;
     padding-left: 10rem 2rem;
-    background: var(--main-blue);
+
 }
 .project-header{
     max-width: 700px;
-    margin: 0 auto 6rem auto;
+    margin: 40px auto 6rem auto;
     padding-top: 10px;
     border-bottom: 0.2rem solid var(--main-white);
 }
@@ -86,7 +89,7 @@ h1{
 }
 .project{
     background: var(--main-gray);
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
     border-radius: 2px;
 
 }
@@ -105,8 +108,75 @@ img{
 }
 .code{
     color: var(--main-gray);
-    transition: color 0.3s ease-out;
+   
 }
-:hover ,code{
-    color: #be3144;
+.code:hover{
+    transition: color 0.3s ease-out;
+    color: var(--main-red);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+}
+
+.btn{
+     font-size: 20px;
+        background-color: black;
+        padding: 10px;
+        width: 100%;
+        max-width: 201px;
+        margin: 0 120% 10% 120%;
+      
+    
+}
+.btn:hover{
+    background-color: var(--main-red);
+}
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+   
+}
+
+.contact-section  p{
+    
+    font-style: italic;
+    font-size: 16px;
+
+}
+.contact-link{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width:960px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.contact-details{
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+hr{
+    border-bottom:4px solid #be3144;
+}
+footer  {
+    background: var(--main-gray);
+    display: flex;
+   justify-content: space-evenly;
+   padding: 2rem;
+   
+}
+footer p{
+    font-size: 20px;
 }
